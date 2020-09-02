@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" >
+	<script src="tic-tac-toe.js">
+	</script>
+<link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
+</head>
+	<body>
+	<div id="round">			
+		Round 1
+	</div>
+	<div id="winnerBadge">
+		<b>Winner:</b> 
+		<span id="winner"> No winner for round 1 </span> <br />
+	</div>
+	
+	<div id="nextPlayerBadge"><span id="nextPlayer">X</span>, it's your turn</div>
+
+	<div class="gameTable">
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+			<div class="tableField">
+			</div>
+	</div>
+
+	<div id="scoreBadge">		
+		<b>Score</b>
+			<span class = "xScoreContainer">
+				<b>X:</b> <span id="xScore">0</span> 
+			</span>
+			<span class="yScoreContainer">
+				<b>O:</b> <span id="oScore">0</span>
+			</span>
+	</div>
+	<br />
+	<div id="resetArea">
+		<button onclick="resetGame()" id="resetGame">Reset game</button>
+		<button onclick="nextRound()" id="nextRound">Next round</button>
+	</div>
+	</body>
+
+</html>

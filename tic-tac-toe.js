@@ -69,6 +69,7 @@ var fields;
 			currentPlayer = "X";
 			roundNumber++;
 			winner.innerText = "No winner for round " + roundNumber;
+			nextPlayer.innerText = "X";
 			nextRoundBtn.style.visibility = "hidden";
 			round.innerText = "Round " + roundNumber; 
 			roundFinished = false;
@@ -77,9 +78,13 @@ var fields;
 		function resetGame() {
 			clearTable();
 			winner.innerText = "No winner for round 1";
+			nextPlayer.innerText = "X";
 			xScoreSpan.innerText = 0;
 			oScoreSpan.innerText = 0;
+			xScore = 0;
+			oScore = 0;
 			round.innerText = "Round 1";
+			roundFinished = false;
 		}
 
 		document.addEventListener("DOMContentLoaded", function() {
